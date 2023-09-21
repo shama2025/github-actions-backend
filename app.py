@@ -4,5 +4,9 @@ from flask import Flask,render_template
 app = Flask(__name__)
 
 @app.route("/")
-def helloWorld():
+def navBar():
     return render_template('navBar.html')
+
+@app.route("/pageOne")
+def pageOne():
+    return render_template('pageOne.html')
