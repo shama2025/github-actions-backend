@@ -5,4 +5,4 @@ app = Flask(__name__)
 
 @app.route("/")
 def helloWorld():
-    return render_template('test.html')
+    return render_template('navBar.html')
