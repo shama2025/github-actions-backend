@@ -1,0 +1,1 @@
+In this repository, I am practicing good software engineer practices as well as programming with python.
