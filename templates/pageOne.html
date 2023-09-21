@@ -1,11 +1,28 @@
 <!DOCTYPE html>
+<!-- Counter that has a pop up after 10 clicks -->
 <html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="../static/navBar.css" />
-        <script type="module" src="../static/app.js"></script>
-    </head>
-    <body>
-       <div id="navBar"></div>
-        <p>Hello World form page one</p>
-    </body>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../static/navBar.css" />
+    <link rel="stylesheet" type="text/css" href="../static/pageOne.css" />
+    <script type="module" src="../static/app.js"></script>
+    <script type="module" src="../static/pageOne.js"></script>
+  </head>
+
+  <body>
+    <div id="navBar"></div>
+    <div class="center">
+       <button id="counterBtn" class="big-button">Click Me!</button> 
+    <div id="myPopup" class="popup">
+      <div class="popup-content">
+        <h1 style="color: green">Number of Clicks surpassed!</h1>
+        <p>Will need to make a transaction of 0.05 dollars</p>
+        <button id="closePopup">Close</button>
+      </div>
+    </div>  
+</div>
+<div class="center">
+    <div id="counter" class="big-number"></div>
+</div>
+
+  </body>
 </html>
