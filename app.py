@@ -20,3 +20,8 @@ def page_one():
 def page_two():
     """Will display pageTwo.html"""
     return render_template("pageTwo.html")
+
+@app.route("/pageThree")
+def page_three():
+    """Will display pageThree.html"""
+    return render_template("pageThree.html")
