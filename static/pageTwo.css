@@ -1,0 +1,23 @@
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    height: 500px;
+    width: 500px;
+}
+       /* Add CSS styles for two-column layout */
+       .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .left-column {
+        flex: 1;
+        margin-right: 20px;
+    }
+
+    .right-column {
+        flex: 1;
+    }
