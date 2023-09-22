@@ -14,3 +14,9 @@ def nav_bar():
 def page_one():
     """Will Display pageOne.html"""
     return render_template("pageOne.html")
+
+
+@app.route("/pageTwo")
+def page_two():
+    """Will display pageTwo.html"""
+    return render_template("pageTwo.html")
