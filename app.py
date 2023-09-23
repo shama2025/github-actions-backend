@@ -3,7 +3,6 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-
 @app.route("/")
 def nav_bar():
     """Will display the navbar.html file"""
