@@ -23,5 +23,5 @@ jobs:
     - name: Analysing the code with pylint
       run: |
         python - m pylint app
-        python -m flask app
+        python -m flask run
         npx playwright test flask_web_app_test
