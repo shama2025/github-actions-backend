@@ -22,9 +22,10 @@ jobs:
         pip install black
         pip install pylint
         python -m playwright install
-    - name: Analysing the code with pylint
+    - name: Running style checks
       run: |
         python -m black $(git ls-files '*.py')
         python -m pylint $(git ls-files '*.py')
-        python -m flask run
-        python -m pytest
+    - name: Testing flask applications
+        python -m flask run 
+        python -m pytest --headed
