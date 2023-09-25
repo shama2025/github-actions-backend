@@ -19,6 +19,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install flask
         pip install pytest-playwright
+        pip install black
         pip install pylint
         python -m playwright install
     - name: Analysing the code with pylint
