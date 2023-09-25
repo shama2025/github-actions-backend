@@ -23,6 +23,7 @@ jobs:
         python -m playwright install
     - name: Analysing the code with pylint
       run: |
+        python -m black $(git ls-files '*.py')
         python -m pylint $(git ls-files '*.py')
         python -m flask run
         python -m pytest
