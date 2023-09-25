@@ -27,5 +27,6 @@ jobs:
         python -m black $(git ls-files '*.py')
         python -m pylint $(git ls-files '*.py')
     - name: Testing flask applications
+      run: |
         python -m flask run 
         python -m pytest --headed
