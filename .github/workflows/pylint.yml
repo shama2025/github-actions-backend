@@ -18,9 +18,11 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install flask
+        pip install pytest-playwright
         pip install pylint
+        python -m playwright install
     - name: Analysing the code with pylint
       run: |
         python -m pylint $(git ls-files '*.py')
         python -m flask run
-        pytest
+        python -m pytest
