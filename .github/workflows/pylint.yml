@@ -21,6 +21,6 @@ jobs:
         pip install pylint
     - name: Analysing the code with pylint
       run: |
-        python - m pylint app
+        python -m pylint $(git ls-files '*.py')
         python -m flask run
         pytest
