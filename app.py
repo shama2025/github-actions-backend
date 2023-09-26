@@ -20,7 +20,7 @@ def page_two():
     """Will display pageTwo.html"""
     return render_template("pageTwo.html")
 
-@app.route("/pageTwo/submit")
+@app.route("/pageTwo/submit", methods=(['POST']))
 def page_two_submit():
     user_input = request.get_data("user_input")
     return f"Your input was {user_input}"
