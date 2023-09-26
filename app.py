@@ -23,7 +23,7 @@ def page_two():
 def page_two_submit():
     """This is the submit page where it renders the users input"""
     user_input = request.get_data("user_input")
-    return f"Your input was: {user_input}", render_template("navBar.html")
+    return f"Your input was: {user_input}" + render_template("navBar.html") #change this to incorporate both the navbar and this return value
 
 @app.route("/pageThree")
 def page_three():
