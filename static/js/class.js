@@ -8,7 +8,8 @@ const body = document.querySelector('#body')
 
 body.addEventListener('load', ()=>{
     if(user_type == "student"){
-    class_input.style.display = 'none'
+    alert("student page")
+    add_class_btn.disabled = true
 }
 })
 
