@@ -1,24 +1,80 @@
+
 .center {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 75%;
     transform: translate(-50%, -50%);
-  }
-img{
-    height: 500px;
-    width: 500px;
 }
-       /* Add CSS styles for two-column layout */
-       .container {
-        display: flex;
-        justify-content: space-between;
-    }
 
-    .left-column {
-        flex: 1;
-        margin-right: 20px;
-    }
+.container {
+    display: flex;
+    justify-content: space-between;
+}
 
-    .right-column {
-        flex: 1;
-    }
+.left-column {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.right-column {
+    flex: 1;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.table-container {
+    height: 400px; /* Set a fixed height */
+    overflow-y: scroll; /* Add a vertical scroll bar */
+    border: 1px solid #ccc; /* Optional border for the container */
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+#userInputMorse {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.translateText {
+    font-size: 18px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+label {
+    font-size: 16px;
+    margin-right: 10px; /* Add some spacing to the right */
+    color: #333; /* Text color */
+}
+
+/* Style the button */
+input[type="button"] {
+    padding: 8px 16px; /* Add padding to the button */
+    font-size: 14px;
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* Remove border */
+    cursor: pointer; /* Add pointer cursor on hover */
+}
+
+/* Change button style on hover */
+input[type="button"]:hover {
+    background-color: #0056b3; /* Button background color on hover */
+}
