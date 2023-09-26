@@ -7,7 +7,7 @@ const add_class_txt = document.querySelector('#add_class')
 
 //disabled button on load
 
-function disableBtn(){
+window.onload =function disableBtn(){
    alert(user_type)
    // if(user_type == 'faculty'){
    //      class_input.style.display = "block";
