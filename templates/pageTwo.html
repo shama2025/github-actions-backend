@@ -10,9 +10,11 @@
 
 <body>
     <div id="navBar"></div>
-    <label for="user_input">Enter name: </label>
-    <input type="text" id="user_input" class="user-input">
-    <button id="submit_btn" class="submit-btn"><a href="pageTwo/submit">Submit Button</a></button>
+    <form action="/pageTwo/submit" method="post">
+        <label for="user_input">Enter something:</label>
+        <input type="text" id="user_input" name="user_input">
+        <input type="submit" value="Submit">
+    </form>
 </body>
 
 </html>

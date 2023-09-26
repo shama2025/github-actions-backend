@@ -20,11 +20,10 @@ def page_two():
     """Will display pageTwo.html"""
     return render_template("pageTwo.html")
 
-@app.route('/submit', methods=['POST'])
+@app.rout("/pageTwo/submit")
 def page_two_submit():
-    """This will grab a users form submition and return it"""
-    user_form_input = request.form.get("user_input")
-    return f"<h1>Hello user: {user_form_input}</h1>"
+    user_input = request.get_data("user_input")
+    return f"Your input was {user_input}"
 
 @app.route("/pageThree")
 def page_three():
