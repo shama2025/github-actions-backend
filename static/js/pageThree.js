@@ -4,6 +4,13 @@ const submit_btn = document.getElementById('submit_btn')
 const username = document.getElementById('username')
 const password = document.getElementById('password')
 
+student.addEventListener('change', ()=>{
+    faculty.disabled = true
+})
+
+faculty.addEventListener('change', ()=>{
+    student.disabled = true
+})
 
 
  submit_btn.addEventListener('click',() =>{
