@@ -34,4 +34,4 @@ def page_three():
 @app.route("/pageThree/class")
 def page_three_student():
     """Will show the student side of the application"""
-    return "<h1>hello from student</h1>"
+    return render_template("class.html")
