@@ -8,39 +8,11 @@
     <script type="module" src="../static/js/pageTwo.js"></script>
 </head>
 
-<body id="body">
+<body>
     <div id="navBar"></div>
-    <div class="container">
-        <div class="left-column">
-            <h1>Morse Code to String</h1>
-            <h3>Type in full morse with spaces and click enter to see the string</h3>
-            
-            <div class="table-container"><table>
-                <thead>
-                    <tr>
-                        <td>
-                            English
-                        </td>
-                        <td>
-                            Morse Code
-                        </td>
-                    </tr>
-                </thead>
-                <tbody id="tableBody">
-                </tbody>
-            </table></div>
-        </div>
-        <div class="right-column">
-            <div class="center">
-                <label for="userInputMorse">Enter Morse Code:</label>
-                <input type="text" placeholder="Enter text " id="userInputMorse">
-                <label for="clearTextInput">Clear search bar: </label>
-                <input type="button" value="Clear text input" id="clearTextInput">
-                <hr>
-                <div class="translateText" id="translateText"></div>
-            </div>
-        </div>
-    </div>
+    <label for="user_input">Enter name: </label>
+    <input type="text" id="user_input" class="user-input">
+    <button id="submit_btn" class="submit-btn"><a href="pageTwo/submit">Submit Button</a></button>
 </body>
 
 </html>
