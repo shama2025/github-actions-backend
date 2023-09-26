@@ -14,6 +14,11 @@ def page_one():
     """Will Display pageOne.html"""
     return render_template("pageOne.html")
 
+@app.route("/pageTwo")
+def page_two():
+    """Will displaye pageTwo.html"""
+    return render_template("pageTwo.html")
+
 @app.route("/pageTwo/submit", methods=['POST'])
 def page_two_submit():
     """This is the submit page where it renders the users input"""
