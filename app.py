@@ -31,12 +31,7 @@ def page_three():
     """Will display pageThree.html"""
     return render_template("pageThree.html")
 
-@app.route("/pageThree/student")
+@app.route("/pageThree/class")
 def page_three_student():
     """Will show the student side of the application"""
     return "<h1>hello from student</h1>"
-
-@app.route("/pageThree/faculty")
-def page_three_faculty():
-    """Will show the faculty side of the application"""
-    return "<h1>hello from faculty</h1>"
