@@ -1,8 +1,8 @@
 const student = document.getElementById('student')
 const faculty = document.getElementById('faculty')
 const submit_btn = document.getElementById('submit_btn')
-const username = document.getElementById('username')
-const password = document.getElementById('password')
+const username = document.getElementById('username').value
+const password = document.getElementById('password').value
 
 student.addEventListener('change', ()=>{
     faculty.disabled = true
