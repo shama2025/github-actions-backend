@@ -6,6 +6,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     strategy:
+      max-parallel: 2
       matrix:
         python-version: ["3.8", "3.9", "3.10"]
     steps:
@@ -28,4 +29,5 @@ jobs:
         python -m pylint $(git ls-files '*.py')
     - name: Testing flask applications
       run: |
+        python -m flask run
         python -m pytest
