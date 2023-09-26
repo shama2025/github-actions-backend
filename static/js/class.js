@@ -7,11 +7,10 @@ const add_class_txt = document.querySelector('#add_class')
 
 //disabled button on load
 
-window.onload =function disableBtn(){
-   alert(user_type)
-   // if(user_type == 'faculty'){
-   //      class_input.style.display = "block";
-   // }
+window.onload = function disableBtn(){
+   if(user_type == 'faculty'){
+        class_input.style.display = "block";
+   }
 }
 
 add_class_btn.addEventListener('click', () =>{
