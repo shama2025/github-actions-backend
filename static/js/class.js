@@ -8,7 +8,7 @@ const body = document.querySelector('#body')
 
 body.addEventListener('load', ()=>{
     if(user_type == "student"){
-    class_input.style.display = none
+    class_input.style.display = 'none'
 }
 })
 
