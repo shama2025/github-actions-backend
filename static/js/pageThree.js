@@ -16,10 +16,10 @@ faculty.addEventListener('change', ()=>{
  submit_btn.addEventListener('click',() =>{
         if(student.checked){
             console.log("student")
-            window.location.href = "http://localhost:5000/pageThree/class?user_type=student+username=" + username + "password="+password
+            window.location.href = "http://localhost:5000/pageThree/class?user_type=student+username=" + username
         }else if(faculty.checked){
             console.log("faculty")
-            window.location.href = "http://localhost:5000/pageThree/class?user_type=faculty+username=" + username + "password="+password
+            window.location.href = "http://localhost:5000/pageThree/class?user_type=faculty+username=" + username
         }else if(faculty.checked){
         }else{
             alert("Need to click student or faculty")

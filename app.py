@@ -9,7 +9,6 @@ def nav_bar():
     """Will display the navbar.html file"""
     return render_template("navBar.html")
 
-
 @app.route("/pageOne")
 def page_one():
     """Will Display pageOne.html"""
