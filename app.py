@@ -14,16 +14,11 @@ def page_one():
     """Will Display pageOne.html"""
     return render_template("pageOne.html")
 
-@app.route("/pageTwo")
-def page_two():
-    """Will display pageTwo.html"""
-    return render_template("pageTwo.html")
-
 @app.route("/pageTwo/submit", methods=['POST'])
 def page_two_submit():
     """This is the submit page where it renders the users input"""
     user_input = request.get_data("user_input")
-    return render_template("navBar.html")+ f"Your input was: {user_input}" #change this to incorporate both the navbar and this return value
+    return render_template("navBar.html")+ f"Your input was: {user_input}" 
 
 @app.route("/pageThree")
 def page_three():
