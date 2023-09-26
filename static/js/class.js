@@ -12,7 +12,7 @@ window.onload = function disableBtn(){
    alert(user_type.substring(0,6))
    alert(user_type.substring(0,5))
    alert(user_type.substring(0,4))
-   if( user_type.substring(0,8)!= 'student'){
+   if( user_type.substring(0,8) != "student"){
         class_input.style.display = "block";
    }
 }
