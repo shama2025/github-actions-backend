@@ -5,12 +5,25 @@
         <link rel="stylesheet" type="text/css" href="../static/styles/navBar.css" />
         <script type="module" src="../static/js/app.js"></script>
         <link rel="stylesheet" type="text/css" href="../static/styles/pageThree.css" />
+        <script type="module" src="../static/js/pageThree.js"></script> 
     </head>
     <body>
         <div id="navBar"></div>
         <div class="center">
-               <div class="loading-circle"><h3 class="loading-text">Loading...</h3></div>
+            <form>
+            <label for="username">Username: </label>
+            <input type="text" id="username" placeholder="Username...">
+            <label for="password">Password: </label>
+            <input type="text" id="password" placeholder="Password...">
+        
+        </form>
         </div>
-     
+          <div class="below">
+                <label for="student">Student: </label>
+                <input type="radio" id="student">
+                <label for="faculty">Faculty</label>
+                <input type="radio" id="faculty">
+                <button id="submit_btn" >Submit login form!</button>
+            </div>
     </body>
 </html>

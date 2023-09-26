@@ -20,12 +20,23 @@ def page_two():
     """Will display pageTwo.html"""
     return render_template("pageTwo.html")
 
-@app.route("/pageTwo/submit", methods=(['POST']))
+@app.route("/pageTwo/submit", methods=['POST'])
 def page_two_submit():
+    """This is the submit page where it renders the users input"""
     user_input = request.get_data("user_input")
-    return f"Your input was {user_input}"
+    return render_template("navBar.html"),f"Your input was: {user_input}"
 
 @app.route("/pageThree")
 def page_three():
     """Will display pageThree.html"""
     return render_template("pageThree.html")
+
+@app.route("/pageThree/student")
+def page_three_student():
+    """Will show the student side of the application"""
+    return "<h1>hello from student</h1>"
+
+@app.route("/pageThree/faculty")
+def page_three_faculty():
+    """Will show the faculty side of the application"""
+    return "<h1>hello from faculty</h1>"
