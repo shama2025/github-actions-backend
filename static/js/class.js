@@ -8,7 +8,9 @@ const add_class_txt = document.querySelector('#add_class')
 //disabled button on load
 
 window.onload = function disableBtn(){
-   if(user_type.substring(0,8) != 'student'){
+   alert(user_type.substring(0,8))
+   alert(user_type.substring(0,7))
+   if( user_type.substring(0,8)!= 'student'){
         class_input.style.display = "block";
    }
 }
