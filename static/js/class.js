@@ -4,15 +4,14 @@ const class_input = document.getElementById('class_input')
 const add_class_btn = document.getElementById('add_class_btn')
 const class_table = document.getElementById('class_table')
 const add_class_txt = document.querySelector('#add_class')
-const body = document.querySelector('#body')
 
-body.addEventListener('load', ()=>{
-    if(user_type == "student"){
-    alert("student page")
-    add_class_btn.disabled = true
+//disabled button on load
+
+function disableBtn(){
+   if(user_type == 'faculty'){
+        class_input.style.display = "block";
+   }
 }
-})
-
 
 add_class_btn.addEventListener('click', () =>{
    const new_row = class_table.appendChild(document.createElement('tr'))
