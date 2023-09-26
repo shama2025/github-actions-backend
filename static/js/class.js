@@ -3,14 +3,13 @@ let user_type = param.get("user_type")
 const class_input = document.getElementById('class_input')
 const add_class_btn = document.getElementById('add_class_btn')
 const class_table = document.getElementById('class_table')
-const add_class_txt = document.querySelector('add_class')
+const add_class_txt = document.querySelector('#add_class')
 const body = document.querySelector('body')
 
 body.addEventListener('load', ()=>{
     if(user_type == "student"){
-    class_input.hidden = true
-}else{
-    class_input.hidden = false
+    add_class_btn.disabled = true
+    class_input.visible = false
 }
 })
 
