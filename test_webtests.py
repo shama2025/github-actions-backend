@@ -2,6 +2,7 @@
 import datetime
 from playwright.sync_api import Page
 
+
 def test_home_page(page: Page):
     """Will test the navBar.html and check each of the pages"""
     page.goto("http://localhost:5000/")
