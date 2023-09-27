@@ -54,3 +54,59 @@ body {
 .class_input{
   display: none;
 }
+
+h3 {
+  text-align: center;
+  color: #333;
+}
+
+.class_input {
+  text-align: center;
+  margin: 20px auto;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"] {
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.table th, .table td {
+  padding: 10px;
+  text-align: left;
+}
+
+.table th {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
