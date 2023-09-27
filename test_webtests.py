@@ -1,6 +1,6 @@
 """This file will house the testing for the web applications"""
-from playwright.sync_api import Page
 import datetime
+from playwright.sync_api import Page
 
 def test_home_page(page: Page):
     """Will test the navBar.html and check each of the pages"""
@@ -39,8 +39,8 @@ def test_page_three_student(page: Page):
     page.get_by_placeholder("Password...").fill("password")
     page.get_by_label("Student:").check()
     page.get_by_role("button", name="Submit login form!").click()
-    Ishidden = page.get_by_role("div, id=class_input").is_visible
-    bool(not Ishidden)
+    is_hidden = page.get_by_role("div, id=class_input").is_visible
+    bool(not is_hidden)
 
 
 def test_page_three_faculty(page: Page):
@@ -55,5 +55,5 @@ def test_page_three_faculty(page: Page):
     page.get_by_placeholder("Add Class Name...").click()
     page.get_by_placeholder("Add Class Name...").fill("Dud Class two")
     page.get_by_role("button", name="Add Class!").click()
-    Ishidden = page.get_by_role("div, id=class_input").is_visible
-    bool(Ishidden)
+    is_hidden = page.get_by_role("div, id=class_input").is_visible
+    bool(is_hidden)
