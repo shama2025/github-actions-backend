@@ -1,5 +1,5 @@
 """This app.py file will contain the backend for the dynamic web applications"""
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
@@ -18,11 +18,24 @@ def page_one():
 
 @app.route("/pageTwo")
 def page_two():
-    """Will display pageTwo.html"""
+    """Will displaye pageTwo.html"""
     return render_template("pageTwo.html")
+
+
+@app.route("/pageTwo/submit", methods=["POST"])
+def page_two_submit():
+    """This is the submit page where it renders the users input"""
+    user_input = request.get_data("user_input")
+    return render_template("navBar.html") + f"Your input was: {user_input}"
 
 
 @app.route("/pageThree")
 def page_three():
     """Will display pageThree.html"""
     return render_template("pageThree.html")
+
+
+@app.route("/pageThree/class")
+def page_three_student():
+    """Will show the student side of the application"""
+    return render_template("class.html")

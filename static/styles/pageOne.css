@@ -1,0 +1,19 @@
+
+body{
+  background: rgb(240,73,2);
+  background: linear-gradient(90deg, rgba(240,73,2,0.6448704481792717) 6%, rgba(192,15,108,0.6448704481792717) 31%, rgba(234,10,34,1) 69%);
+}
+.current-date {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: x-large;
+}
+.center{
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: x-large;
+}

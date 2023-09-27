@@ -1,0 +1,32 @@
+<!-- This is where the student can only see the added courses -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="module" src="../static/js/class.js"></script>
+        <link rel="stylesheet" type="text/css" href="../static/styles/pageThree.css" />
+    </head>
+    <body onload="disableBtn()">
+    <h3 id="username_display"></h3>
+    <div id="class_input" class="class_input">
+    <label for="add_class">Add Class Name: </label>
+    <input type="text" placeholder="Add Class Name..." id="add_class">
+    <button id="add_class_btn">Add Class!</button>
+    </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <td>
+                        Classes
+                    </td>
+                </tr>
+            </thead>
+            <tbody id="class_table">
+                <tr>
+                    <td>
+                        Dud Class One
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
